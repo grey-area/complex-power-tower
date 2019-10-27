@@ -23,7 +23,10 @@ permutations = [
 ]
 
 def get_colour(i):
-    return colours[i % 10][permutations[i // 10]]
+    if i < 60:
+        return colours[i % 10][permutations[i // 10]]
+    else:
+        return np.random.choice(256, size=3)
 
 def is_close(a, b, atol=1e-12):
     return np.abs(a - b) < atol
