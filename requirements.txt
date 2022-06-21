@@ -1,4 +1,4 @@
 numexpr==2.7.0
-numpy==1.17.3
+numpy==1.22.0
 Pillow==6.2.1
 tqdm==4.36.1
